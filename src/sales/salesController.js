@@ -13,7 +13,7 @@ var createSalesControllerFn = async (req, res) => {
         const savedSales = await sales.save();
 
         const salesDetails = new salesDetailModel({
-            salesId: savedSales.__id,
+            salesId: savedSales._id,
             items: items.map(item => ({
                 productName: item.productName,
                 price: item.price,

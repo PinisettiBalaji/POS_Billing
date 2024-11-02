@@ -6,7 +6,8 @@ var salesDetailsSchema = new Schema(
     {
         salesId: {
             type: Schema.Types.ObjectId,
-            ref: 'Sales'
+            ref: 'Sales',
+            required: true
         },
         items: [
             {
