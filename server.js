@@ -6,6 +6,8 @@ const bodyParser = require("body-parser");
 var categoryroutes = require("./routes/category");
 var brandroutes = require("./routes/brand");
 var productroutes = require("./routes/product");
+var salesroutes = require("./routes/sales");
+
 
 const app = express();
 const port = 7000;
@@ -26,3 +28,4 @@ app.use(bodyParser.json());
 app.use(categoryroutes);
 app.use(brandroutes);
 app.use(productroutes);
+app.use(salesroutes);

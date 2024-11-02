@@ -5,9 +5,8 @@ var Schema = mongoose.Schema;
 var salesDetailsSchema = new Schema(
     {
         salesId: {
-            type: mongoose.Types.ObjectId,
-            ref: 'Sales',
-            required: true
+            type: Schema.Types.ObjectId,
+            ref: 'Sales'
         },
         items: [
             {
